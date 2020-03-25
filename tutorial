@@ -1,0 +1,34 @@
+
+Instalar o npm utilizando o    { nvm install v12 }
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= BACK-END =-=-=-=-=-=-=-=-=-=-=-=-=
+    Primeiro foi criado os arquivos iniciais do projeto, utilizando o comando {  npm  init -y  },
+ele va gerar os arquivos iniciais do projeto.
+
+    Nós utilizamos o node.js para fazer o back-end. A primeira coisa que foi utilizada foi o
+{  EXPRESS  }, que é um pacote que pode ser instalado usando o npm que serve para criar as routes 
+Ex: {  http://site.com/route1 }. -> / npm install express
+    
+    Depois utiliamos instalamos o nodemon com npm, que nos permitiu editar o arquivo sem precisar ficar 
+rodando o script a cada edição, ele ja fazia isso por si só. / npm install nodemon -g ou -D
+    
+    Então instalamos o knex e o sqlite3 com o npm, para criação do banco de dados. O knex ele fornece diversas
+funções para criar e controlar o banco via codigo.
+    /npm install knex - instala o knex
+    /npm install sqlite3 - instala o sqlite
+    /npx knex init  -  cria um arquivo knexfile que tem as confi de acesso ao banco de dados
+    /npx knex migrate:make <nome_migration>  -  vai criar um arquivo de migration para criar a tabela <nome>
+    /npx knex migrate:latest - vai executar as migrate criadas e criar o banco de dados slite3 a partir delas
+
+    Depois instalamos o cor, que será usado mais em breve.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= FRONT-END=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    Primeiro foi criada a pasta onde vai ser criada o projeto do react então dentro da pasta 
+    foi executado o seguinte comando: npx create-react-app <nome> .
+
+    Obs: para executar e so / npm start
+
+    Um componente no react nada mais é que uma função que retorna html.
+    Quando um html está estcrito dentro do javascript, isso é chamado de JSX (javascript e XML)
+
