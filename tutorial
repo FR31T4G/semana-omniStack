@@ -32,3 +32,10 @@ funções para criar e controlar o banco via codigo.
     Um componente no react nada mais é que uma função que retorna html.
     Quando um html está estcrito dentro do javascript, isso é chamado de JSX (javascript e XML)
 
+    Agora baixamos um pacote de icones do react usando o comando /npm install react-icons, e depois importamos no cod
+    e pasamos o nome do grupo de icones que queremos usar.
+
+    Com a tela de logon feita, partimos para criar outra tela
+    e para isso foi preciso um sistema de rotas, e para utilizarmos rotas no react 
+    usamo usamos o react routes que baixamos assim -> /npm install react-router-dom
+

@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
-import Header from './Header';
+import React from 'react';
+import './global.css';
+import Routes from './routes';
 
 function App() {
-  const [count,setCount] = useState(0);
-  function incrementar(){
-    setCount(count+1);
-    console.log(count);
-  }
+  
   return (
-    <div>
-      <Header title="Contador: "conta={count} />
-      <button onClick={incrementar}>Incrementar</button>
-    </div>
+    <Routes />
   );
 }
 
