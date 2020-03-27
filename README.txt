@@ -2,6 +2,7 @@
 Instalar o npm utilizando o    { nvm install v12 }
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= BACK-END =-=-=-=-=-=-=-=-=-=-=-=-=
+-----------------------------------------------------------------
     Primeiro foi criado os arquivos iniciais do projeto, utilizando o comando {  npm  init -y  },
 ele va gerar os arquivos iniciais do projeto.
 
@@ -23,19 +24,40 @@ funções para criar e controlar o banco via codigo.
     Depois instalamos o cor, que será usado mais em breve.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= FRONT-END=-=-=-=-=-=-=-=-=-=-=-=-=
+-----------------------------------------------------------------
 
     Primeiro foi criada a pasta onde vai ser criada o projeto do react então dentro da pasta 
     foi executado o seguinte comando: npx create-react-app <nome> .
 
     Obs: para executar e so / npm start
 
-    Um componente no react nada mais é que uma função que retorna html.
+        Um componente no react nada mais é que uma função que retorna html.
     Quando um html está estcrito dentro do javascript, isso é chamado de JSX (javascript e XML)
 
-    Agora baixamos um pacote de icones do react usando o comando /npm install react-icons, e depois importamos no cod
+        Agora baixamos um pacote de icones do react usando o comando /npm install react-icons, e depois importamos no cod
     e pasamos o nome do grupo de icones que queremos usar.
 
-    Com a tela de logon feita, partimos para criar outra tela
+        Com a tela de logon feita, partimos para criar outra tela
     e para isso foi preciso um sistema de rotas, e para utilizarmos rotas no react 
     usamo usamos o react routes que baixamos assim -> /npm install react-router-dom
 
+        Depois de criar as paginas é hora de fazer a conexão do front-end com o back-end. Vamos fazer isso usando o axio
+    que é um pacote que faz a conexão com dados externos(cliente http).. Aqui vamos usar ele para fazer para conectar com nosso back-end
+    e fazer o post/get/delete, e enviar e receber os dados atraves desses 2 lados.
+    primeiro então instale>
+    /npm install axios
+    Depois criamos pasta chamada services, e um arquivo dentro chamado api.js.
+    
+
+        Depois precisavamos voltar para a pagina de login apos fazer o cadastro. mas não podemos usar o "Link" 
+    que estavamos utilizando pois aquela e uma tag na HTML, precisamos de algo que seja dento do javascript
+    Então chamamos o userHistory, que nos permite realizar o load de outra pagina dentro de uma função javascript.
+
+        Agora utiliamos o "localStorage" que salva dados no localStorage do navegador, sendo assim , é
+    possivel fazer um sstema de loguin, pois, quando um a pessoa loga, seu user fica salvo no localStorage
+    e então todos os seus dados vão ser carregados a partir disso. 
+
+        Vams utilizar uma função que nos permite realizar algumas funções em determinados momentos, por exemplo,
+    ao abrir o codigo quero que carregue alguns dados, entao utilizaremos o useEffect.
+
+    
