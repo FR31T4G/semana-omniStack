@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import {Link,useHistory} from 'react-router-dom';
 import {FiLogIn} from 'react-icons/fi';
 
@@ -9,7 +9,9 @@ import heroesImg from '../../assets/heroes.png';
 import api from '../../services/api';
 
 export default function Logon() {
-
+    useEffect(()=>{
+        localStorage.clear();
+    },[]);
     const [id,setID] = useState('');
     const history = useHistory();
     async function HandleLogon(e){

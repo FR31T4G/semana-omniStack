@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import '../../global.css';
 import './styles.css';
 import { Link ,useHistory } from 'react-router-dom';
@@ -13,6 +13,10 @@ export default function NewIncident() {
     const [description,setDescription] = useState('');
     const [value,setValue] = useState('');
 
+    useEffect(() => {
+        if(!localStorage.getItem('ong_id')){
+            history.push('/');
+        }},[]); 
 
     async function HandleNewIncident(e){
         const data = {title,description,value};

@@ -60,4 +60,11 @@ funções para criar e controlar o banco via codigo.
         Vams utilizar uma função que nos permite realizar algumas funções em determinados momentos, por exemplo,
     ao abrir o codigo quero que carregue alguns dados, entao utilizaremos o useEffect.
 
-    
+    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= MOBILE -=-=-=-=-=-======-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-
+
+        Agora é hora de fazer o mobile, então utilizaremos o expo, que é uma plataforma para para criação de aplicativos
+        universais, que funcionam em diferentes sistemas operacionais.
+
+        primeira coisa que fizemos apos criar as pastas, foi arrumar um modo de controlaro sistema de rotas do app
+        para isso utilizaremos o reac-vavigation aque encontramos nesse link https://reactnavigation.org/docs/getting-started
+        

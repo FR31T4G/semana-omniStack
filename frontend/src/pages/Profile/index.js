@@ -14,6 +14,9 @@ export default function Profile() {
     const [incidents, setIncidents] = useState([]);
     const history = useHistory();
     useEffect(() => {
+        if(!localStorage.getItem('ong_id')){
+            history.push('/');
+        }
         api.get('profile', {
             headers: {
                 Authorization: ong_id,
